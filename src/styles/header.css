@@ -1,0 +1,177 @@
+/* global style */
+a:link {
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  color: inherit;
+}
+
+/* Header 전체 Style */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 165px;
+
+  background-color: #fff;
+
+  transition: height 0.3s;
+}
+
+.header-over {
+  height: 405px;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
+}
+
+.header::after {
+  content: "";
+
+  position: absolute;
+  top: 164px;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #e5e5e5;
+}
+
+.header-inner {
+  position: relative;
+  max-width: 65%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logo,
+.nav {
+  width: 100%;
+}
+
+/* 로고 Style */
+.logo {
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* 유틸 메뉴 Style */
+.util-menu {
+  position: absolute;
+  top: 35px;
+  right: -65px;
+
+  display: flex;
+  align-items: center;
+
+  height: 35px;
+
+  font-size: 13px;
+  color: #666;
+}
+
+.util-menu > .sign {
+  position: relative;
+}
+
+.util-menu > .sign ~ .sign {
+  margin-left: 30px;
+}
+
+.util-menu > .sign ~ .sign::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: 125%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+
+  width: 3px;
+  height: 3px;
+  margin-top: -2px;
+
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.util-menu > .global-subway-icon {
+  margin-left: 15px;
+}
+
+/* GNB Style */
+.nav {
+  position: relative;
+}
+
+.gnb,
+.lnb {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gnb {
+  height: 55px;
+}
+
+.gnb > li {
+  cursor: pointer;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.gnb > li > a,
+.lnb > li > a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.gnb > li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.lnb {
+  position: absolute;
+  z-index: -1;
+  top: 55px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 20px 0;
+
+  opacity: 0;
+
+  transition: opacity 0.3s;
+}
+
+.lnb > li > a {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.lnb > li > a:hover {
+  color: #009223;
+  text-decoration: underline;
+}
+
+.gnb:hover .lnb {
+  z-index: 1;
+  opacity: 1;
+}
