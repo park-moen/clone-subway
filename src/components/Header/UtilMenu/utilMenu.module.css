@@ -1,4 +1,4 @@
-.util-menu {
+.s_utilMenu {
   position: absolute;
   top: 35px;
   right: -65px;
@@ -12,15 +12,15 @@
   color: #666;
 }
 
-.util-menu > .sign {
+.s_utilMenu > .s_sign {
   position: relative;
 }
 
-.util-menu > .sign ~ .sign {
+.s_utilMenu > .s_sign ~ .s_sign {
   margin-left: 30px;
 }
 
-.util-menu > .sign ~ .sign::before {
+.s_utilMenu > .s_sign ~ .s_sign::before {
   content: "";
 
   position: absolute;
@@ -38,6 +38,6 @@
   border-radius: 50%;
 }
 
-.util-menu > .global-subway-icon {
+.s_utilMenu > .s_globalSubwayIcon {
   margin-left: 15px;
 }

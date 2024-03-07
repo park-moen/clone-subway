@@ -1,10 +1,12 @@
 import logImage from "@/assets/logo_title.png";
 
-import "@/components/Header/Logo/logo.css";
+import style from "@/components/Header/Logo/logo.module.css";
+
+const { s_logo } = style;
 
 const Logo = () => {
   return (
-    <section className="logo">
+    <section className={s_logo}>
       <a href="#">
         <img src={logImage} alt="Subway Log" />
       </a>

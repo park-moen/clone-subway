@@ -1,15 +1,4 @@
-/* global style */
-a:link {
-  text-decoration: none;
-}
-
-a:visited,
-a:active {
-  color: inherit;
-}
-
-/* Header 전체 Style */
-.header {
+.s_header {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,12 +11,12 @@ a:active {
   transition: height 0.3s;
 }
 
-.header-over {
+.s_headerOver {
   height: 405px;
   box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
 }
 
-.header::after {
+.s_header::after {
   content: "";
 
   position: absolute;
@@ -40,7 +29,7 @@ a:active {
   background-color: #e5e5e5;
 }
 
-.header-inner {
+.s_headerInner {
   position: relative;
   max-width: 65%;
   height: 100%;
@@ -48,7 +37,7 @@ a:active {
 }
 
 /* Template */
-.main {
+.s_main {
   width: 100%;
   height: 350px;
   margin-top: 165px;

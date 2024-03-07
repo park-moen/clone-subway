@@ -3,5 +3,8 @@
     "stylelint-config-standard",
     "stylelint-prettier/recommended",
     "stylelint-config-clean-order/error"
-  ]
+  ],
+  "rules": {
+    "selector-class-pattern": "^s_[a-z][A-Za-z0-9]*$"
+  }
 }

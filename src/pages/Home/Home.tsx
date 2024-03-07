@@ -4,7 +4,9 @@ import GNBBar from "@/components/Header/GNBBar/GNBBar.tsx";
 import Logo from "@/components/Header/Logo/Logo.tsx";
 import UtilMenu from "@/components/Header/UtilMenu/UtilMenu.tsx";
 
-import "@/pages/Home/home.css";
+import style from "@/pages/Home/home.module.css";
+
+const { s_header, s_headerOver, s_headerInner, s_main } = style;
 
 const Home = () => {
   const [isHover, setIsHover] = useState(false);
@@ -15,14 +17,14 @@ const Home = () => {
 
   return (
     <div>
-      <header className={`header ${isHover ? "header-over" : ""}`}>
-        <div className="header-inner">
+      <header className={`${s_header} ${isHover ? s_headerOver : ""}`}>
+        <div className={s_headerInner}>
           <Logo />
           <UtilMenu />
           <GNBBar onHover={handleHover} />
         </div>
       </header>
-      <main className="main"></main>
+      <main className={s_main}></main>
     </div>
   );
 };
