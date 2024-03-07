@@ -1,12 +1,9 @@
-import Header from "@/components/Header.tsx";
-
-import "@/App.css";
+import Home from "@/pages/Home/Home.tsx";
 
 function App() {
   return (
     <div>
-      <Header />
-      <main className="main"></main>
+      <Home />
     </div>
   );
 }
