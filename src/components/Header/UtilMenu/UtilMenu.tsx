@@ -2,6 +2,8 @@ import MenuLink from "@/components/common/MenuLink.tsx";
 
 import globalIcon from "@/assets/global_subway_icon.png";
 
+import "@/components/Header/UtilMenu/utilMenu.css";
+
 const UtilMenu = () => {
   return (
     <ul className="util-menu">

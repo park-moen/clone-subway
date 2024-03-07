@@ -1,5 +1,7 @@
 import MenuLink from "@/components/common/MenuLink.tsx";
 
+import "@/components/Header/GNBBar/GNBBar.css";
+
 interface GNBProps {
   onHover: React.MouseEventHandler;
 }
