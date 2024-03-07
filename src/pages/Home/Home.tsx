@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-import GNBBar from "@/components/Header/GNBBar/GNBBar.tsx";
-import Logo from "@/components/Header/Logo/Logo.tsx";
-import UtilMenu from "@/components/Header/UtilMenu/UtilMenu.tsx";
+import { GNBBar, Logo, UtilMenu } from "@/components/index.ts";
 
 import style from "@/pages/Home/home.module.css";
 

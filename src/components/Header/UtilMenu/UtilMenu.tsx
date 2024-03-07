@@ -1,6 +1,5 @@
-import MenuLink from "@/components/common/MenuLink/MenuLink.tsx";
-
 import globalIcon from "@/assets/global_subway_icon.png";
+import { MenuLink } from "@/components/index.ts";
 
 import style from "@/components/Header/UtilMenu/utilMenu.module.css";
 

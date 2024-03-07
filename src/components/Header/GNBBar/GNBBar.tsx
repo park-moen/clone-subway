@@ -1,4 +1,4 @@
-import MenuLink from "@/components/common/MenuLink/MenuLink.tsx";
+import { MenuLink } from "@/components/index.ts";
 
 import style from "@/components/Header/GNBBar/GNBBar.module.css";
 
